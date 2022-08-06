@@ -44,7 +44,7 @@ Since there is no ICSP header on the board, you have to program the ATtiny eithe
 - Navigate to the folder with the hex-file.
 - Execute the following command (if necessary replace "usbasp" with the programmer you use):
   ```
-  avrdude -c usbasp -p t13 -U lfuse:w:0x3a:m -U hfuse:w:0xff:m -U flash:w:tinybling.hex
+  avrdude -c usbasp -p t13 -U lfuse:w:0x3a:m -U hfuse:w:0xff:m -U flash:w:tinynightlight.hex
   ```
 
 ### If using the makefile (Linux/Mac)
