@@ -1,7 +1,7 @@
 # TinyNightLight - Night Light with NeoPixels
 TinyNightLight is a rotary encoder controlled and battery powered nightlight with NeoPixels based on the ATtiny13A.
 
-- Design Files (EasyEDA): https://easyeda.com/wagiminator/attiny13-tinynightlights
+- Design Files (EasyEDA): https://easyeda.com/wagiminator/attiny13-tinynightlight_copy
 
 ![TinyNightLight_pic3.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny13-TinyNightLight/main/documentation/TinyNightLight_pic3.jpg)
 
