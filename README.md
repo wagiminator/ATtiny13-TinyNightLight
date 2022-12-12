@@ -44,16 +44,15 @@ Since there is no ICSP header on the board, you have to program the ATtiny eithe
 - Navigate to the folder with the hex-file.
 - Execute the following command (if necessary replace "usbasp" with the programmer you use):
   ```
-  avrdude -c usbasp -p t13 -U lfuse:w:0x3a:m -U hfuse:w:0xff:m -U flash:w:tinynightlight.hex
+  avrdude -c usbasp -p t13 -U lfuse:w:0x3a:m -U hfuse:w:0xfb:m -U flash:w:tinynightlight.hex
   ```
 
 ### If using the makefile (Linux/Mac)
 - Make sure you have installed [avr-gcc toolchain and avrdude](http://maxembedded.com/2015/06/setting-up-avr-gcc-toolchain-on-linux-and-mac-os-x/).
 - Connect your programmer to your PC and to the ATtiny.
-- Open the makefile and change the programmer if you are not using usbasp.
 - Open a terminal.
 - Navigate to the folder with the makefile and the sketch.
-- Run "make install" to compile, burn the fuses and upload the firmware.
+- Run `PROGRMR=usbasp make install` to compile, burn the fuses and upload the firmware (change PROGRMR accordingly).
 
 # Operating Instructions
 Place a 3.7V protected 16340 (LR123A) Li-Ion battery in the holder. The battery can be charged via the USB-C port. A red LED lights up during charging. It goes out when charging is complete.
